@@ -1,6 +1,6 @@
 export const templateLink = {
-  Ernakulam: "./templates/ernakulam.html",
-  Palakad: "./templates/palakkad.html",
-  Mysore: "./templates/mysore.html",
-  Banglore: "./templates/bangalore.html",
+  Ernakulam: `${process.cwd()}/templates/ernakulam.html`,
+  Palakad: `${process.cwd()}/templates/palakkad.html`,
+  Mysore: `${process.cwd()}/templates/mysore.html`,
+  Banglore: `${process.cwd()}/templates/bangalore.html`,
 };
