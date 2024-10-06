@@ -50,6 +50,8 @@ h2 {
 .form-group select {
   width: 100%;
   padding: 10px;
+  background-color: #f4f4f4;
+  color: black;
   font-size: 14px;
   border-radius: 5px;
   border: 1px solid #ccc;
