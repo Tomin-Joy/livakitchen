@@ -3,4 +3,5 @@ export const templateLink = {
   Palakad: `palakkad.html`,
   Mysore: `mysore.html`,
   Banglore: `bangalore.html`,
+  dummy: "dummy",
 };
