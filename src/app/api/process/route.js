@@ -4,6 +4,7 @@ import { promisify } from "util";
 import nodemailer from "nodemailer";
 import { templateLink } from "./constants";
 import dbEnter from "./database";
+import path from "path";
 
 const transporter = nodemailer.createTransport({
   pool: true,
@@ -20,11 +21,15 @@ export async function POST(request) {
     const formData = await request.formData();
     const toAddress = formData.get("client_email");
 
-    const readFile = promisify(fs.readFile);
-    const html = await readFile(
-      templateLink[formData.get("budget_range")],
-      "utf8"
+    let templatePath = path.join(
+      process.cwd(),
+      "public",
+      "templates",
+      templateLink[formData.get("budget_range")]
     );
+
+    const readFile = promisify(fs.readFile);
+    const html = await readFile(templatePath, "utf8");
 
     await transporter.sendMail({
       from: `"Liva interiors" <${process.env.NM_EMAIL}>`,
