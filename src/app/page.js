@@ -101,7 +101,7 @@ export default function Home() {
           </button>
         </form>
         <div className="footer">
-          <p>WebTeam Liva Interiors</p>
+          <p>Made with ❤ by Liva Kitchens And Interiors </p>
         </div>
       </div>
     </>
