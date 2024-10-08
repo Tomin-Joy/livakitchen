@@ -85,7 +85,7 @@ export default function Home() {
             </select>
           </div>
           <div className="form-group">
-            <label htmlFor="budget_range">Budget Range:</label>
+            <label htmlFor="budget_range">Select Showrrom:</label>
             <select id="budget_range" name="budget_range" required>
               <option value="" hidden>
                 Added From Which Showroom
