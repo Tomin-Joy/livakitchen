@@ -38,6 +38,19 @@ export default function Home() {
         onClose={() => setIsDialogOpen(false)}
       />
       <div className="form-container">
+          <style>
+    .logo-container {
+      text-align: center;
+      margin: 20px 0; /* Optional: adds some space above and below */
+    }
+    .logo {
+      width: 150px; /* Adjust the logo size as needed */
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <img src="https://res.cloudinary.com/dhplt9h4t/image/upload/v1728145804/logo-2_cw3qqp.png" alt="Company Logo" class="logo"/>
           <img src="https://res.cloudinary.com/dhplt9h4t/image/upload/v1728145804/logo-2_cw3qqp.png" alt="Company Logo" class="logo"/>
         <h2>Client Information Form</h2>
         <form onSubmit={formSubmit}>
