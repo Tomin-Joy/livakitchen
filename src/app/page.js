@@ -38,6 +38,7 @@ export default function Home() {
         onClose={() => setIsDialogOpen(false)}
       />
       <div className="form-container">
+          <img src="https://res.cloudinary.com/dhplt9h4t/image/upload/v1728145804/logo-2_cw3qqp.png" alt="Company Logo" class="logo">
         <h2>Client Information Form</h2>
         <form onSubmit={formSubmit}>
           <div className="form-group">
