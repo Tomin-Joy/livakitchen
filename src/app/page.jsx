@@ -32,7 +32,7 @@ export default function Home() {
         } catch (error) {
             console.log(error);
 
-            alert("Error occured contact administrator");
+            alert("Error occured contact administrator ( +91 9778685012 )");
         }
     }
     return (

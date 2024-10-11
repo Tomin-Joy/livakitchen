@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import clientPromise from "../../../../lib/mongodb";
+import appendToSheet from "../../../../lib/google";
 
 export default async function dbEnter(formData) {
   try {
@@ -12,8 +13,8 @@ export default async function dbEnter(formData) {
       service_type: formData.get("service_type"),
       budget_range: formData.get("budget_range"),
     };
-    const data = await db.collection("clients").insertOne(form);
-    return NextResponse.json({ success: true, data });
+    await db.collection("clients").insertOne(form);
+    return appendToSheet(form);
   } catch (error) {
     return NextResponse.error({ message: "db error", error: error });
   }

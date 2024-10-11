@@ -35,7 +35,7 @@ const AlertDialog = ({ isOpenVal, onClose, onSubmit }) => {
       a.click();
       a.remove();
     } else {
-      alert("Unauthorized or error occurred.");
+      alert("Unauthorized or error occurred. contact ( +91 9778685012 )");
     }
   };
 
