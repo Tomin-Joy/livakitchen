@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
-import clientPromise from "../../../../lib/mongodb";
-import appendToSheet from "../../../../lib/google";
+import clientPromise from "../../../../libs/mongodb";
+import appendToSheet from "../../../../libs/google";
 
 export default async function dbEnter(formData) {
   try {
