@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import clientPromise from "../../../../lib/mongodb";
+import clientPromise from "../../../../libs/mongodb";
 import ExcelJS from "exceljs";
 
 export async function POST(req) {
