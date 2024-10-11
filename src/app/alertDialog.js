@@ -46,7 +46,7 @@ const AlertDialog = ({ isOpenVal, onClose, onSubmit }) => {
       <div className="bg-white p-6 rounded-lg shadow-lg w-80">
         <div className="flex justify-between">
           <h3 className="text-lg font-semibold mb-4 text-black ">
-            Alert Dialog
+            Enter Secret 🔐🤫
           </h3>
           <button
             className="bg-blue-600 mb-4 p-1 rounded-md "
@@ -57,10 +57,10 @@ const AlertDialog = ({ isOpenVal, onClose, onSubmit }) => {
           </button>
         </div>
         <input
-          type="text"
+          type="password"
           value={secret}
           onChange={handleInputChange}
-          className="w-full p-2 border border-gray-300 rounded mb-4"
+          className="w-full p-2 border border-gray-300 rounded mb-4 bg-slate-50 text-black"
           placeholder="Enter something..."
         />
         <div className="flex justify-center">
