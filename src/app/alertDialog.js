@@ -46,7 +46,7 @@ const AlertDialog = ({ isOpenVal, onClose, onSubmit }) => {
       <div className="bg-white p-6 rounded-lg shadow-lg w-80">
         <div className="flex justify-between">
           <h3 className="text-lg font-semibold mb-4 text-black ">
-            Enter Secret 🔐🤫
+            Enter Administrator Password 🔐🤫
           </h3>
           <button
             className="bg-blue-600 mb-4 p-1 rounded-md "
