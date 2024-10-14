@@ -43,7 +43,7 @@ const AlertDialog = ({ isOpenVal, onClose, onSubmit }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-80">
+      <div className="bg-white p-6 rounded-lg shadow-lg w-100">
         <div className="flex justify-between">
           <h3 className="text-lg font-semibold mb-4 text-black ">
             Enter Administrator Password 🔐🤫
