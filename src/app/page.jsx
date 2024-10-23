@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import AlertDialog from "./alertDialog";
 import useKeyPress from "../../hooks/keypress";
 import "./style.css";
@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 export default function Home() {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const router = useRouter();
+    const btnref = useRef(null);
 
     useKeyPress(() => {
         setIsDialogOpen(true);
@@ -16,6 +17,7 @@ export default function Home() {
     });
 
     async function formSubmit(e) {
+        btnref.current.disabled = true;
         e.preventDefault();
         const formData = new FormData(e.target);
         try {
@@ -108,9 +110,8 @@ export default function Home() {
                         </select>
                     </div>
 
-                    <button type="submit" className="submit-btn button">
-                        Submit
-                    </button>
+                    <button ref={btnref} type="submit" className="submit-btn button" />
+
                 </form>
                 <div className="footer">
                     <p>Made with ❤ by Liva Kitchens And Interiors </p>
